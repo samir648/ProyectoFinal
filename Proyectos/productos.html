@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Distribuciones SAFO</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo-safo.png" alt="Distribuciones SAFO Logo" id="logo">
+      <h1>Distribuciones SAFO</h1>
+    </div>
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Buscar licores...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="cart-container">
+      <button id="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html" class="active">Productos</a></li>
+      <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <h1>Nuestros Productos</h1>
+      <p>Descubre nuestra amplia selección de licores premium</p>
+    </section>
+
+    <section class="filter-section">
+      <div class="filter-container">
+        <div class="filter-group">
+          <h3>Categorías</h3>
+          <ul class="category-filter">
+            <li><a href="#" class="active" data-category="todos">Todos</a></li>
+            <li><a href="#" data-category="whisky">Whisky</a></li>
+            <li><a href="#" data-category="ron">Ron</a></li>
+            <li><a href="#" data-category="cerveza">Cerveza</a></li>
+            <li><a href="#" data-category="aguardiente">Aguardiente</a></li>
+            <li><a href="#" data-category="vino">Vino</a></li>
+          </ul>
+        </div>
+        <div class="filter-group">
+          <h3>Ordenar por</h3>
+          <select id="sort-select">
+            <option value="default">Destacados</option>
+            <option value="price-asc">Precio: Menor a Mayor</option>
+            <option value="price-desc">Precio: Mayor a Menor</option>
+            <option value="name-asc">Nombre: A-Z</option>
+            <option value="name-desc">Nombre: Z-A</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-container">
+      <div id="products" class="products-grid"></div>
+    </section>
+  </main>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="cart-header-actions">
+        <h2>Tu Carrito</h2>
+        <button id="clear-cart-btn" class="clear-cart-btn">Vaciar Carrito</button>
+      </div>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <!-- Aquí irán los botones de pago -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Distribuciones SAFO</h3>
+        <p>Tu tienda de licores de confianza</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-map-marker-alt fa-fw"></i>Dirección: Calle 17 # 29-05</p>Valledupar, Colombia
+        <p><i class="fa fa-envelope mx-2"></i>Email: solutionssfsas@gmail.com</p>
+        <p><i class="fa fa-phone fa-fw"></i>Teléfono: (123) 456-7890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Ley 30 de 1986 y Ley 124 de 1994</h3>
+        <p>"El exceso de alcohol es perjudicial para la salud","Prohíbese el expendio de bebidas embriagantes a menores de edad".</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Distribuciones SAFO. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

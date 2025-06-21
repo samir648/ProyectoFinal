@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiénes Somos - Distribuciones SAFO</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo-safo.png" alt="Distribuciones SAFO Logo" id="logo">
+      <h1>Distribuciones SAFO</h1>
+    </div>
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Buscar licores...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="cart-container">
+      <button id="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="quienes-somos.html" class="active">Quiénes Somos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <h1>Quiénes Somos</h1>
+      <p>Conoce nuestra historia y valores</p>
+    </section>
+
+    <section class="about-section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1516997121675-4c2d1684aa3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Nuestra Historia">
+        </div>
+        <div class="about-content">
+          <h2>Nuestra Historia</h2>
+          <p>Distribuciones SAFO nació en 2025 con la visión de ofrecer los mejores licores a precios accesibles. Lo que comenzó como un pequeño negocio familiar se ha convertido en una de las distribuidoras más reconocidas de la región.</p>
+          <p>A lo largo de este año, hemos construido relaciones sólidas con nuestros proveedores y clientes, garantizando siempre productos de la más alta calidad y un servicio excepcional.</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="img/imagenvision.webp" alt="Visión">
+        </div>
+        <div class="about-content">
+          <h2>Visión</h2>
+          <p>Ser una marca auténtica, distintiva y conectada con los clientes, garantizando productos de buena calidad.</p>
+          <h2>Misión</h2>
+          <p>Mas que distribución de bebidas, distribuimos experiencia sin igual para los clientes se sientan en familia.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="values-section">
+      <h2>Nuestros Valores</h2>
+      <div class="values-container">
+        <div class="value-card">
+          <i class="fas fa-handshake"></i>
+          <h3>Confianza</h3>
+          <p>Construimos relaciones duraderas basadas en la honestidad y transparencia.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-award"></i>
+          <h3>Calidad</h3>
+          <p>Seleccionamos cuidadosamente cada producto para garantizar la mejor experiencia.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-heart"></i>
+          <h3>Pasión</h3>
+          <p>Amamos lo que hacemos y nos esforzamos por mejorar cada día.</p>
+        </div>
+        <div class="value-card">
+          <i class="fas fa-users"></i>
+          <h3>Servicio</h3>
+          <p>La satisfacción de nuestros clientes es nuestra prioridad número uno.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section">
+      <h2>Nuestro Equipo</h2>
+      <div class="team-container">
+        <div class="team-member">
+          <div class="member-image">
+            <img src="img/foto_perfil.jpg" alt="Juan Pérez">
+          </div>
+          <h3>Samir Fontalvo</h3>
+          <p>Fundador & CEO</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="cart-header-actions">
+        <h2>Tu Carrito</h2>
+        <button id="clear-cart-btn" class="clear-cart-btn">Vaciar Carrito</button>
+      </div>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <!-- Aquí irán los botones de pago -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Distribuciones SAFO</h3>
+        <p>Tu tienda de licores de confianza</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <p><i class="fas fa-map-marker-alt fa-fw"></i>Dirección: Calle 17 # 29-05</p>Valledupar, Colombia
+        <p><i class="fa fa-envelope mx-2"></i>Email: solutionssfsas@gmail.com</p>
+        <p><i class="fa fa-phone fa-fw"></i>Teléfono: (123) 456-7890</p>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Ley 30 de 1986 y Ley 124 de 1994</h3>
+        <p>"El exceso de alcohol es perjudicial para la salud","Prohíbese el expendio de bebidas embriagantes a menores de edad".</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Distribuciones SAFO. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

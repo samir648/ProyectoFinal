@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distribuciones SAFO - Tienda de Licores</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Agregar Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="img/logo-safo.png" alt="Distribuciones SAFO Logo" id="logo">
+      <h1>Distribuciones SAFO</h1>
+    </div>
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Buscar licores...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="cart-container">
+      <button id="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></button>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Los mejores licores a tu alcance</h2>
+        <p>Descubre nuestra selección premium de bebidas</p>
+        <a href="productos.html" class="cta-button">Ver Productos</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-container">
+        <div class="feature">
+          <i class="fas fa-truck"></i>
+          <h3>Envío Rápido</h3>
+          <p>Entregamos en toda la ciudad en menos de 24 horas</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-medal"></i>
+          <h3>Calidad Garantizada</h3>
+          <p>Productos originales con garantía de satisfacción</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-tag"></i>
+          <h3>Mejores Precios</h3>
+          <p>Ofertas exclusivas y descuentos especiales</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h2>Productos Destacados</h2>
+      <div id="featured-products" class="products-carousel"></div>
+      <div class="view-all-container">
+        <a href="productos.html" class="view-all-btn">Ver Todos los Productos</a>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"Excelente servicio y productos de calidad. La entrega fue muy rápida."</p>
+          </div>
+          <div class="testimonial-author">
+            <p><strong>Carlos Rodríguez</strong></p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"Los mejores precios de la ciudad y una atención al cliente excepcional."</p>
+          </div>
+          <div class="testimonial-author">
+            <p><strong>María González</strong></p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"Siempre encuentro lo que busco y la entrega es puntual. Muy recomendado."</p>
+          </div>
+          <div class="testimonial-author">
+            <p><strong>Juan Pérez</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="cart-header-actions">
+        <h2>Tu Carrito</h2>
+        <button id="clear-cart-btn" class="clear-cart-btn">Vaciar Carrito</button>
+      </div>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <!-- Aquí irán los botones de pago -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Distribuciones SAFO</h3>
+        <p>Tu tienda de licores de confianza</p>
+      </div>
+      <div class="footer-section">
+          <h3>Contacto</h3>
+          <p><i class="fas fa-map-marker-alt fa-fw"></i>Dirección: Calle 17 # 29-05</p>Valledupar, Colombia
+          <p><i class="fa fa-envelope mx-2"></i>Email: solutionssfsas@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw"></i>Teléfono: (123) 456-7890</p>
+
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Ley 30 de 1986 y Ley 124 de 1994</h3>
+        <p>"El exceso de alcohol es perjudicial para la salud","Prohíbese el expendio de bebidas embriagantes a menores de edad".</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Distribuciones SAFO. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
